@@ -8,11 +8,22 @@
 }
 
 .navbar {
-  background-color: #1a1a2e;
+  
   padding: 20px 40px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-visible {
+  transform: translateY(0);
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
 }
 
 .nav-container {
@@ -24,13 +35,13 @@
 }
 
 .logo-container {
-  background-color: white;
+
   padding: 12px 24px;
   border-radius: 4px;
 }
 
 .logo {
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 24px;
   white-space: nowrap;
@@ -76,4 +87,3 @@
     font-size: 12px;
   }
 }
-

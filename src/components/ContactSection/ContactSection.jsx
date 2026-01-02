@@ -1,5 +1,6 @@
 import React from "react";
 import './ContactSection.css';
+import footerImg from "../../assets/footer.png"
 
 const ContactSection = () => {
   return (
@@ -7,7 +8,7 @@ const ContactSection = () => {
       <div className="contact-container">
         <div className="contact-image">
           <img 
-            src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=800&q=80" 
+            src={footerImg}
             alt="Fresh Vietnamese ingredients"
             className="ingredients-image"
           />

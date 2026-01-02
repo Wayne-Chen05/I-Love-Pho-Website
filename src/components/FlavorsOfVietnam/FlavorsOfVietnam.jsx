@@ -1,18 +1,21 @@
 import React from "react";
 import './FlavorsOfVietnam.css';
+import cuisine from "../../assets/cuisine.png"
+import sushi from "../../assets/tempura platter.jpeg"
+import drinks from "../../assets/vietnamese egg coffee.jpeg"
 
 const FlavorsOfVietnam = () => {
   const categories = [
     {
-      image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",
+      image: cuisine,
       title: "Cuisine"
     },
     {
-      image: "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=600&q=80",
+      image: sushi,
       title: "Sushi"
     },
     {
-      image: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=600&q=80",
+      image: drinks,
       title: "Drinks"
     }
   ];

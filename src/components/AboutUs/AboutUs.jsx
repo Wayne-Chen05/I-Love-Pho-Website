@@ -1,5 +1,7 @@
 import React from "react";
 import './AboutUs.css';
+import springRolls from "../../assets/fresh veg spring roll.png"
+import prawns from "../../assets/prawns.png"
 
 const AboutUs = () => {
   return (
@@ -8,18 +10,18 @@ const AboutUs = () => {
         <div className="about-images">
           <div className="image-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80" 
+              src={springRolls}
               alt="Fresh spring rolls"
               className="about-image"
             />
           </div>
-          <div className="image-wrapper">
+          {/*<div className="image-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=600&q=80" 
+              src={prawns}
               alt="Shrimp and noodle salad"
               className="about-image"
             />
-          </div>
+          </div>*/}
         </div>
         
         <div className="about-content">

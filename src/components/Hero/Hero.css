@@ -1,6 +1,5 @@
 .hero-section {
   min-height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1920&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,14 +22,16 @@
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  text-align: center;
+  bottom: 60px; /* 100px from bottom */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .book-table-btn {
-  background-color: #5d4037;
-  color: white;
+  background-color: white;
+  color: black;
   border: none;
   padding: 16px 48px;
   font-size: 18px;
@@ -42,7 +43,7 @@
 }
 
 .book-table-btn:hover {
-  background-color: #6d4c41;
+  background-color: whitesmoke;
   transform: translateY(-2px);
 }
 

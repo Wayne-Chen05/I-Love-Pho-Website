@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import './BanhMiSlider.css';
+import banhMi from "../../assets/banh mi.png"
 
 const BanhMiSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=1920&q=80",
+      image: banhMi,
       title: "Traditional Banh Mi"
     },
     {
