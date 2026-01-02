@@ -1,0 +1,76 @@
+.flavors-section {
+  background-color: #f5f5dc;
+  padding: 100px 40px;
+}
+
+.flavors-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+}
+
+.flavors-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.flavor-card {
+  text-align: center;
+}
+
+.flavor-image-wrapper {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.flavor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.flavor-image:hover {
+  transform: scale(1.05);
+}
+
+.flavor-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin-top: 15px;
+}
+
+@media (max-width: 968px) {
+  .flavors-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .flavors-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .flavors-section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 969px) {
+  .flavors-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
