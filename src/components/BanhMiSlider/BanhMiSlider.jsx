@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './BanhMiSlider.css';
-import banhMi from "../../assets/banh mi.png"
+import banhMi from "../../assets/Korean Fried Chicken Wings.jpg"
 
 const BanhMiSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

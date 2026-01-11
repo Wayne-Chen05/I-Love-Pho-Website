@@ -1,6 +1,6 @@
 import React from "react";
 import './FlavorsOfVietnam.css';
-import cuisine from "../../assets/cuisine.png"
+import cuisine from "../../assets/Spring Roll Bowl.jpg"
 import sushi from "../../assets/tempura platter.jpeg"
 import drinks from "../../assets/vietnamese egg coffee.jpeg"
 

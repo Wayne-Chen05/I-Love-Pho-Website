@@ -1,6 +1,6 @@
 import React from "react";
 import './AboutUs.css';
-import springRolls from "../../assets/fresh veg spring roll.png"
+import springRolls from "../../assets/Prawn Fresh Spring Roll.jpg"
 import prawns from "../../assets/prawns.png"
 
 const AboutUs = () => {

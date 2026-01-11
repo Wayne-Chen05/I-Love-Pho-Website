@@ -1,6 +1,6 @@
 import React from "react";
 import './Hero.css';
-import heroImage from '../../assets/hero.png'; // Adjust the path to your image
+import heroImage from '../../assets/hero.jpg'; // Adjust the path to your image
 
 const Hero = () => {
   const scrollToContact = () => {
