@@ -1,39 +1,69 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import './BanhMiSlider.css';
-import banhMi from "../../assets/Korean Fried Chicken Wings.jpg"
+import koreanChicken from "../../assets/Korean Fried Chicken Wings.jpg"
+import combo from "../../assets/Combo.jpg"
+import springRollBowl from "../../assets/Spring Roll Bowl.jpg"
+import searedCheeseSushi from "../../assets/Seared Cheese Sushi.jpg"
 
 const BanhMiSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderTrackRef = useRef(null);
+  const isTransitioningRef = useRef(false);
   
   const slides = [
     {
-      image: banhMi,
-      title: "Traditional Banh Mi"
+      image: koreanChicken,
+      title: "Korean Fried Chicken Wings"
     },
     {
-      image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1920&q=80",
-      title: "Pho Special"
+      image: combo,
+      title: "Combo"
     },
     {
-      image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=1920&q=80",
-      title: "Fresh Spring Rolls"
+      image: springRollBowl,
+      title: "Spring Roll Bowl"
+    },
+    {
+      image: searedCheeseSushi,
+      title: "Seared Cheese Sushi"
     }
   ];
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    if (isTransitioningRef.current) return;
+    isTransitioningRef.current = true;
+    setCurrentIndex((prev) => (prev + 1) % slides.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    if (isTransitioningRef.current) return;
+    isTransitioningRef.current = true;
+    setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
   };
+
+  useEffect(() => {
+    const track = sliderTrackRef.current;
+    if (!track) return;
+
+    const handleTransitionEnd = () => {
+      isTransitioningRef.current = false;
+    };
+
+    track.addEventListener('transitionend', handleTransitionEnd);
+    return () => {
+      track.removeEventListener('transitionend', handleTransitionEnd);
+    };
+  }, []);
 
   return (
     <section id="gallery" className="banhmi-slider-section">
       <div className="slider-container">
         <div 
+          ref={sliderTrackRef}
           className="slider-track"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          style={{ 
+            transform: `translateX(-${currentIndex * 25}%)`
+          }}
         >
           {slides.map((slide, index) => (
             <div key={index} className="slide">

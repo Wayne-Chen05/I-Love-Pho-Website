@@ -1,7 +1,7 @@
 import React from "react";
 import './AboutUs.css';
 import springRolls from "../../assets/Prawn Fresh Spring Roll.jpg"
-import prawns from "../../assets/prawns.png"
+import dumplings from "../../assets/Dumplings.jpg"
 
 const AboutUs = () => {
   return (
@@ -15,13 +15,13 @@ const AboutUs = () => {
               className="about-image"
             />
           </div>
-          {/*<div className="image-wrapper">
+          <div className="image-wrapper">
             <img 
-              src={prawns}
-              alt="Shrimp and noodle salad"
+              src={dumplings}
+              alt="Dumplings"
               className="about-image"
             />
-          </div>*/}
+          </div>
         </div>
         
         <div className="about-content">
@@ -29,7 +29,9 @@ const AboutUs = () => {
           <p className="about-text">
             Our founder, Vicky, grew up in a small village in Vietnam, where meals were simple but full of love and care. Cooking with her family taught her the warmth of sharing food and the joy it can bring. Carrying those memories with her, Vicky opened this restaurant to bring the taste of home to every table.
           </p>
-          <button className="contact-btn">Contact Us</button>
+          <a href="#contact">
+            <button className="contact-btn">Contact Us</button>
+          </a>
         </div>
       </div>
     </section>

@@ -8,22 +8,12 @@
 }
 
 .navbar {
-  
   padding: 20px 40px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  transition: transform 0.3s ease-in-out;
-}
-
-.navbar-visible {
-  transform: translateY(0);
-}
-
-.navbar-hidden {
-  transform: translateY(-100%);
 }
 
 .nav-container {
@@ -35,9 +25,11 @@
 }
 
 .logo-container {
-
   padding: 12px 24px;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .logo {
@@ -45,6 +37,16 @@
   font-weight: bold;
   font-size: 24px;
   white-space: nowrap;
+  line-height: 1.2;
+}
+
+.logo-subtitle {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
 }
 
 .nav-links {
@@ -62,6 +64,7 @@
   font-weight: 500;
   letter-spacing: 1px;
   transition: opacity 0.3s;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
