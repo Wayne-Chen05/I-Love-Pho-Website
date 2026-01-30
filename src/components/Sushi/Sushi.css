@@ -1,0 +1,40 @@
+.sushi-page {
+  min-height: 100vh;
+  background-color: #f5f5dc;
+  padding: 100px 40px;
+}
+
+.sushi-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sushi-heading {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.sushi-description {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 968px) {
+  .sushi-page {
+    padding: 60px 20px;
+  }
+  
+  .sushi-heading {
+    font-size: 36px;
+  }
+  
+  .sushi-description {
+    font-size: 18px;
+  }
+}
