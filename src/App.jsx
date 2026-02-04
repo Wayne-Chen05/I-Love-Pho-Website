@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import AboutUs from './components/AboutUs/AboutUs.jsx';
@@ -25,9 +26,28 @@ function HomePage() {
   );
 }
 
+// Scroll to hash when landing on home with a hash (e.g. /#menus from menu pages)
+function HashScroll() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (pathname !== '/' || !hash) return;
+    const id = hash.slice(1);
+    // Wait for home page sections to mount before scrolling
+    const timer = setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [pathname, hash]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <HashScroll />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
