@@ -28,10 +28,6 @@
   overflow: hidden;
 }
 
-.menu-section:first-child .menu-section-divider {
-  margin-top: 0;
-}
-
 .menu-section-divider::before {
   content: '';
   position: absolute;

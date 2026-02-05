@@ -1,40 +1,283 @@
 .sushi-page {
   min-height: 100vh;
   background-color: #f5f5dc;
-  padding: 100px 40px;
+  padding-top: 80px;
+  padding-bottom: 48px;
 }
 
 .sushi-container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
-.sushi-heading {
-  font-size: 48px;
+/* Section divider: matches content width, greyed-out picture in background */
+.menu-section-divider {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  background-color: #c4c4c4;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.menu-section-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.menu-section-divider-title {
+  position: relative;
+  z-index: 1;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.menu-section {
+  margin-bottom: 24px;
+}
+
+/* Sushi items grid (no images, just name and options) */
+.sushi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid #ddd;
+}
+
+.sushi-item {
+  display: flex;
+  padding: 20px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sushi-item-content {
+  width: 100%;
+}
+
+.sushi-item-name {
+  font-size: 18px;
   font-weight: bold;
   color: black;
-  text-align: center;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+  margin: 0 0 12px 0;
 }
 
-.sushi-description {
-  font-size: 20px;
-  color: #666;
-  text-align: center;
-  margin-bottom: 60px;
+.sushi-item-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sushi-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sushi-option-name {
+  font-size: 14px;
+  color: #333;
+}
+
+.sushi-option-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  margin-left: 16px;
+}
+
+/* Regular menu items (with images) */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid #ddd;
+}
+
+.menu-grid--single {
+  grid-template-columns: 1fr;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 130px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item-image {
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  min-height: 130px;
+  background: black;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.menu-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-item-content {
+  min-width: 0;
+}
+
+.menu-item-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 6px 0;
+}
+
+.menu-item-description {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.menu-item-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+  margin-right: 32px;
+}
+
+/* Back button: center bottom, circular, black, white left arrow */
+.menus-back-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  padding-bottom: 16px;
+}
+
+.menus-back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.menus-back-btn:hover {
+  opacity: 0.85;
+  transform: translateX(-4px);
 }
 
 @media (max-width: 968px) {
   .sushi-page {
-    padding: 60px 20px;
+    padding-top: 70px;
+    padding-bottom: 32px;
   }
-  
-  .sushi-heading {
-    font-size: 36px;
+
+  .sushi-container {
+    padding: 0 20px;
   }
-  
-  .sushi-description {
-    font-size: 18px;
+
+  .menu-section-divider {
+    min-height: 160px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .menu-section-divider-title {
+    font-size: 24px;
+  }
+
+  .sushi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sushi-item {
+    padding: 16px 20px;
+  }
+
+  .sushi-item-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .sushi-option-name {
+    font-size: 13px;
+  }
+
+  .sushi-option-price {
+    font-size: 13px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item {
+    grid-template-columns: 100px 1fr auto;
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .menu-item-image {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .menu-item-price {
+    margin-right: 20px;
+  }
+
+  .menu-item-name {
+    font-size: 16px;
+  }
+
+  .menu-item-description {
+    font-size: 13px;
+  }
+
+  .menu-item-price {
+    font-size: 16px;
+  }
+
+  .menus-back-wrap {
+    margin-top: 32px;
+    padding-bottom: 12px;
+  }
+
+  .menus-back-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .menus-back-btn svg {
+    width: 24px;
+    height: 24px;
   }
 }
