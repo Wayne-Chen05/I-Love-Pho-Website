@@ -17,32 +17,32 @@
 // import coffeeBg from '../../assets/coffee-bg.jpg';
 
 export const SECTION_BACKGROUNDS = {
-    coffee: null,
-    tea: null,
-    cooldrinks: null,
-  };
-  
-  export const COFFEE_MENU = [
-    { image: null, name: 'Espresso', description: 'Rich, bold shot of pure Italian espresso.', price: 'R 28' },
-    { image: null, name: 'Cappuccino', description: 'Espresso with steamed milk and velvety foam.', price: 'R 38' },
-    { image: null, name: 'Latte', description: 'Smooth espresso with creamy steamed milk.', price: 'R 42' },
-  ];
-  
-  export const TEA_MENU = [
-    { image: null, name: 'Green Tea', description: 'Traditional Japanese green tea, light and refreshing.', price: 'R 25' },
-    { image: null, name: 'Jasmine Tea', description: 'Fragrant jasmine blossoms infused with green tea.', price: 'R 28' },
-    { image: null, name: 'Chai Latte', description: 'Spiced black tea with steamed milk and honey.', price: 'R 38' },
-  ];
-  
-  export const COOLDRINKS = [
-    { name: 'Coca Cola', price: 'R 22' },
-    { name: 'Coca Cola Zero', price: 'R 22' },
-    { name: 'Sprite', price: 'R 22' },
-    { name: 'Fanta Orange', price: 'R 22' },
-    { name: 'Stoney Ginger Beer', price: 'R 22' },
-    { name: 'Appletiser', price: 'R 28' },
-    { name: 'Grapetiser', price: 'R 28' },
-    { name: 'Still Water', price: 'R 18' },
-    { name: 'Sparkling Water', price: 'R 20' },
-    { name: 'Iced Tea', price: 'R 25' },
-  ];
+  coffee: null,
+  tea: null,
+  cooldrinks: null,
+};
+
+export const COFFEE_MENU = [
+  { image: null, name: 'Espresso', description: 'Rich, bold shot of pure Italian espresso.', price: 'R 28' },
+  { image: null, name: 'Cappuccino', description: 'Espresso with steamed milk and velvety foam.', price: 'R 38' },
+  { image: null, name: 'Latte', description: 'Smooth espresso with creamy steamed milk.', price: 'R 42' },
+];
+
+export const TEA_MENU = [
+  { image: null, name: 'Green Tea', description: 'Traditional Japanese green tea, light and refreshing.', price: 'R 25' },
+  { image: null, name: 'Jasmine Tea', description: 'Fragrant jasmine blossoms infused with green tea.', price: 'R 28' },
+  { image: null, name: 'Chai Latte', description: 'Spiced black tea with steamed milk and honey.', price: 'R 38' },
+];
+
+export const COOLDRINKS = [
+  { name: 'Coca Cola', price: 'R 22' },
+  { name: 'Coca Cola Zero', price: 'R 22' },
+  { name: 'Sprite', price: 'R 22' },
+  { name: 'Fanta Orange', price: 'R 22' },
+  { name: 'Stoney Ginger Beer', price: 'R 22' },
+  { name: 'Appletiser', price: 'R 28' },
+  { name: 'Grapetiser', price: 'R 28' },
+  { name: 'Still Water', price: 'R 18' },
+  { name: 'Sparkling Water', price: 'R 20' },
+  { name: 'Iced Tea', price: 'R 25' },
+];
