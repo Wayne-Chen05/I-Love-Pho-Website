@@ -16,16 +16,49 @@
 // import platter1 from '../../assets/platter-1.jpg';
 // import sushiBg from '../../assets/sushi-bg.jpg';
 
+import platter2 from '../../assets/SushiMenu/Lunch Specials/platter 2.jpeg';
+import platter3 from '../../assets/SushiMenu/Lunch Specials/platter 3.jpeg';
+import platter4 from '../../assets/SushiMenu/Lunch Specials/platter 4.jpeg';
+
+import chefsPlatter from "../../assets/SushiMenu/Platters/chef's platter.jpeg";
+import deepFriedPlatter from '../../assets/SushiMenu/Platters/deep fried platter.jpeg';
+import salmonLunch from '../../assets/SushiMenu/Platters/salmon lunch.jpeg';
+import tempuraPlatter from '../../assets/SushiMenu/Platters/tempura platter.jpeg';
+
+import platter1 from '../../assets/SushiMenu/Lunch Specials/platter 1.jpg';
+
+import sixFlavours from '../../assets/SushiMenu/Platters/6 flavours nigiri.jpeg';
+import prawnPlatter from '../../assets/SushiMenu/Platters/prawn platter.jpg';
+import rainbowPlatter from '../../assets/SushiMenu/Platters/rainbow platter.jpg';
+import vegPlatter from '../../assets/SushiMenu/Platters/veg platter.jpg';
+
+import sushiDivider from '../../assets/SushiMenu/sushi divider.jpg';
+import lunchSpecialsDivider from '../../assets/SushiMenu/lunch specials divider.jpg';
+import sushiPlattersDivider from '../../assets/SushiMenu/sushi platters divider.jpg';
+
 export const SECTION_BACKGROUNDS = {
-  sushi: null,
-  lunchSpecials: null,
-  sushiPlatters: null,
+  sushi: sushiDivider,
+  lunchSpecials: lunchSpecialsDivider,
+  sushiPlatters: sushiPlattersDivider,
 };
 
 // Sushi items with multiple price options (no images)
 export const SUSHI = [
   {
-    name: 'Maki',
+    name: 'Sashimi',
+    options: [
+      { name: 'Salmon', price: 'R 80' },
+      { name: 'Grilled', price: 'R 85' }
+    ],
+  },
+  {
+    name: 'Roses (4pcs)',
+    options: [
+      { name: 'Salmon', price: 'R 75' },
+    ],
+  },
+  {
+    name: 'Maki (8pcs)',
     options: [
       { name: 'Salmon', price: 'R 48' },
       { name: 'Prawn', price: 'R 48' },
@@ -35,105 +68,141 @@ export const SUSHI = [
     ],
   },
   {
-    name: 'Nigiri',
+    name: 'California (4pcs)',
     options: [
-      { name: 'Salmon', price: 'R 55' },
-      { name: 'Tuna', price: 'R 60' },
-      { name: 'Prawn', price: 'R 52' },
-      { name: 'Eel', price: 'R 58' },
+      { name: 'Salmon', price: 'R 48' },
+      { name: 'Prawn', price: 'R 48' },
+      { name: 'Prawn Tempura', price: 'R 50' },
+      { name: 'Veg', price: 'R 40' },
+      { name: 'Crab', price: 'R 40' },
     ],
   },
   {
-    name: 'Sashimi',
+    name: 'Handroll (1pc)',
     options: [
-      { name: 'Salmon', price: 'R 85' },
-      { name: 'Tuna', price: 'R 90' },
-      { name: 'Mixed', price: 'R 95' },
+      { name: 'Salmon', price: 'R 50' },
+      { name: 'Prawn', price: 'R 50' },
+      { name: 'Prawn Tempura', price: 'R 55' },
+      { name: 'Veg', price: 'R 45' }
     ],
   },
   {
-    name: 'California Roll',
+    name: 'Fashion Sandwich (4pcs)',
     options: [
-      { name: 'Classic', price: 'R 65' },
-      { name: 'Tempura', price: 'R 70' },
-      { name: 'Spicy', price: 'R 68' },
+      { name: 'Salmon', price: 'R 48' },
+      { name: 'Prawn', price: 'R 48' },
+      { name: 'Veg', price: 'R 40' },
+      { name: 'Crab', price: 'R 40'}
     ],
   },
   {
-    name: 'Rainbow Roll',
+    name: 'Rainbow Roll (4pcs)',
     options: [
-      { name: 'Regular', price: 'R 85' },
-      { name: 'Deluxe', price: 'R 95' },
+      { name: 'Salmon', price: 'R 58' },
+      { name: 'Prawn', price: 'R 58' },
+      { name: 'Veg', price: 'R 48' }
     ],
   },
   {
-    name: 'Dragon Roll',
+    name: 'Seared Cheese Sushi (8pcs)',
     options: [
-      { name: 'Eel & Avocado', price: 'R 90' },
-      { name: 'Prawn Tempura', price: 'R 88' },
+      { name: 'Salmon', price: 'R 95' },
+      { name: 'Prawn', price: 'R 90' }
     ],
   },
   {
-    name: 'Spicy Tuna Roll',
+    name: 'Seared Sushi Roll (8pcs)',
     options: [
-      { name: 'Regular', price: 'R 72' },
-      { name: 'Extra Spicy', price: 'R 75' },
+      { name: 'Tempura Prawn', price: 'R 99' },
+      { name: 'Salmon', price: 'R 89' },
+      { name: 'Prawn', price: 'R 89' },
+      { name: 'Veg', price: 'R 60' }
     ],
   },
   {
-    name: 'Philadelphia Roll',
+    name: 'Fried Sushi (5pcs)',
     options: [
-      { name: 'Classic', price: 'R 68' },
-      { name: 'Smoked Salmon', price: 'R 75' },
+      { name: 'Salmon California Roll', price: 'R 65' },
+      { name: 'Fried Salmon Roll', price: 'R 60' },
+      { name: 'Crab Spicy Roll', price: 'R 55' }
     ],
   },
   {
-    name: 'Temaki (Hand Roll)',
+    name: 'Mixed Roses (4pcs)',
     options: [
-      { name: 'Salmon', price: 'R 45' },
-      { name: 'Tuna', price: 'R 48' },
-      { name: 'Prawn', price: 'R 45' },
-      { name: 'Veg', price: 'R 35' },
+      { name: '1pc Prawn, 1pc Avo, 1pc Crab, 1pc Original', price: 'R 85' }
     ],
   },
   {
-    name: 'Futomaki',
+    name: 'Golden Roll',
     options: [
-      { name: 'Mixed Seafood', price: 'R 78' },
-      { name: 'Vegetarian', price: 'R 58' },
-    ],
-  },
-  {
-    name: 'Salmon Roses',
-    options: [
-      { name: '4 Pieces', price: 'R 75' },
-      { name: '8 Pieces', price: 'R 140' },
-    ],
-  },
-  {
-    name: 'Inari',
-    options: [
-      { name: 'Salmon', price: 'R 52' },
-      { name: 'Tuna', price: 'R 55' },
-      { name: 'Veg', price: 'R 42' },
+      { name: '6 Pieces', price: 'R 65' }
     ],
   },
 ];
 
 export const LUNCH_SPECIALS = [
-  { image: null, name: 'Bento Box Special', description: 'Choice of California roll, 3pc nigiri, miso soup, and edamame.', price: 'R 120' },
-  { image: null, name: 'Sushi & Sashimi Combo', description: '6pc sushi, 6pc sashimi, served with miso soup.', price: 'R 145' },
-  { image: null, name: 'Salmon Lover Set', description: '8pc salmon maki, 2pc salmon nigiri, 3pc salmon sashimi.', price: 'R 135' },
-  { image: null, name: 'Vegetarian Delight', description: 'Assorted vegetarian rolls with avocado, cucumber, and pickled radish.', price: 'R 95' },
+  { image: platter1,
+    name: 'Platter 1 (13pcs)', 
+    description: '4pcs Salmon sandwich, 4pcs Salmon california, 1pc Salmon handroll, 4pcs Avo maki.', 
+    price: 'R 128' 
+  },
+  { image: platter2, 
+    name: 'Platter 2 (15pcs)', 
+    description: '4pcs Veg sandwich, 8pcs Veg rainbow, 2pcs Avo nigiri, 1pc Veg handroll.', 
+    price: 'R 98' 
+  },
+  { image: platter3, 
+    name: 'Platter 3 (14pcs)', 
+    description: '4pcs Prawn sandwich, 4pcs Prawn california, 2pcs Prawn nigiri, 4pcs Avo maki.', 
+    price: 'R 118' 
+  },
+  { image: platter4, 
+    name: 'Platter 4 (14pcs)', 
+    description: '4pcs Salmon rainbow, 4pcs Avo maki, 2pcs Salmon roses, 4pcs Salmon california.', 
+    price: 'R 128' 
+  },
 ];
 
 export const SUSHI_PLATTERS = [
-  { image: null, name: 'Family Platter', description: '40 pieces: Mixed maki, nigiri, and California rolls.', price: 'R 450' },
-  { image: null, name: 'Deluxe Platter', description: '60 pieces: Premium selection of sushi and sashimi.', price: 'R 680' },
-  { image: null, name: 'Party Platter', description: '80 pieces: Ultimate variety for sharing at parties.', price: 'R 850' },
-  { image: null, name: 'Sashimi Platter', description: '30 pieces: Fresh cuts of salmon, tuna, and yellowtail.', price: 'R 380' },
-  { image: null, name: 'Vegetarian Platter', description: '36 pieces: All vegetarian rolls and nigiri.', price: 'R 320' },
-  { image: null, name: 'Salmon Platter', description: '30 pieces: All salmon - maki, nigiri, and sashimi.', price: 'R 360' },
-  { image: null, name: 'Mixed Nigiri Platter', description: '24 pieces: Assorted premium nigiri selection.', price: 'R 420' },
-  { image: null, name: 'Roll Combo Platter', description: '48 pieces: Various specialty rolls for sharing.', price: 'R 580' },
+  { image: prawnPlatter, 
+    name: 'A. Prawn Platter (23pcs)', 
+    description: '8pcs Prawn sandwich, 4pcs Tempura rainbow, 2pcs Prawn nigiri, 1pc Prawn handroll, 8pcs Prawn maki.', 
+    price: 'R 229' 
+  },
+  { image: rainbowPlatter, 
+    name: 'B. Rainbow Platter (19pcs)', 
+    description: '8pcs Salmon california, 8pcs Salmon rainbow, 3pcs, Salmon roses.', 
+    price: 'R 229' 
+  },
+  { image: deepFriedPlatter, 
+    name: 'C. Deep Fried Platter (20pcs)', 
+    description: '4pcs Prawn sandwich, 4pcs Salmon california, 4pcs Dragon flower, 8pcs Fried salmon.', 
+    price: 'R 199' 
+  },
+  { image: chefsPlatter, 
+    name: "D. Chef's Platter (16pcs)", 
+    description: '4pcs Salmon roses, 4pcs Dragon flower roll, 4pcs Mixed roses, 4pcs Tempura rainbow.', 
+    price: 'R 199' 
+  },
+  { image: tempuraPlatter, 
+    name: 'E. Tempura Platter (16pcs)', 
+    description: '4pcs Deep fried california, 4pcs Dragon flower, 4pcs Tempura rainbow, 4pcs Rock prawn roll.', 
+    price: 'R 169' 
+  },
+  { image: salmonLunch, 
+    name: 'F. Salmon Lunch (18pcs)', 
+    description: '4pcs Fashion sandwich, 4pcs Rainbow roll, 8pcs Salmon maki, 2pcs Roses.', 
+    price: 'R 179' 
+  },
+  { image: vegPlatter, 
+    name: 'G. Veg Platter (19pcs)', 
+    description: '8pcs Veg sandwich, 8pcs Avo maki, 2pcs Avo nigiri, 1pc Avo handroll.', 
+    price: 'R 149' 
+  },
+  { image: sixFlavours, 
+    name: '6 Flavours Nigiri (6pcs)', 
+    description: '1pc Original, 1pc Spicy, 1pc Sweet chilli, 1pc Teriyaki, 1pc Caviar, 1pc Black pepper.', 
+    price: 'R 99' 
+  }
 ];

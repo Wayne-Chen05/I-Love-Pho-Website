@@ -16,33 +16,73 @@
 // import tea1 from '../../assets/tea-1.jpg';
 // import coffeeBg from '../../assets/coffee-bg.jpg';
 
+import coffeeDivider from '../../assets/DrinksMenu/Coffee/coffee divider.jpg';
+
+import hotCoffee from '../../assets/DrinksMenu/Coffee/hot coffee.jpg';
+import iceCoffee from '../../assets/DrinksMenu/Coffee/ice coffee.jpg';
+import eggCoffee from '../../assets/DrinksMenu/Coffee/egg coffee.jpeg';
+
+import teaDivider from '../../assets/DrinksMenu/Tea/tea divider.jpg';
+
+import jasmineTea from '../../assets/DrinksMenu/Tea/jasmine tea.jpg';
+import chrysanthemumTea from '../../assets/DrinksMenu/Tea/chysanthemum tea.jpg';
+import rooibosTea from '../../assets/DrinksMenu/Tea/rooibos tea.jpg';
+
+import drinksDivider from '../../assets/DrinksMenu/drinks divider.jpg'
+
 export const SECTION_BACKGROUNDS = {
-  coffee: null,
-  tea: null,
-  cooldrinks: null,
+  coffee: coffeeDivider,
+  tea: teaDivider,
+  cooldrinks: drinksDivider
 };
 
 export const COFFEE_MENU = [
-  { image: null, name: 'Espresso', description: 'Rich, bold shot of pure Italian espresso.', price: 'R 28' },
-  { image: null, name: 'Cappuccino', description: 'Espresso with steamed milk and velvety foam.', price: 'R 38' },
-  { image: null, name: 'Latte', description: 'Smooth espresso with creamy steamed milk.', price: 'R 42' },
+  { image: hotCoffee, 
+    name: 'Vietnamese Hot Coffee (Cà phê đen)', 
+    description: 'Strong brewed coffee slow dripped through a phin filter, into a cup with sweetened condensed milk.', 
+    price: 'R 50' 
+  },
+  { image: iceCoffee, 
+    name: 'Vietnamese Ice Coffee (Cà phê đá)', 
+    description: 'Ice submerged in strong brewed coffee with sweetened condensed milk.', 
+    price: 'R 50' 
+  },
+  { image: eggCoffee, 
+    name: 'Vietnamese Egg Coffee (Cà phê trứng)', 
+    description: 'Strong brewed coffee with sweetened condensed milk, topped with a layer of egg cream.', 
+    price: 'R 65' 
+  },
 ];
 
 export const TEA_MENU = [
-  { image: null, name: 'Green Tea', description: 'Traditional Japanese green tea, light and refreshing.', price: 'R 25' },
-  { image: null, name: 'Jasmine Tea', description: 'Fragrant jasmine blossoms infused with green tea.', price: 'R 28' },
-  { image: null, name: 'Chai Latte', description: 'Spiced black tea with steamed milk and honey.', price: 'R 38' },
+  { image: jasmineTea, 
+    name: 'Chinese Jasmine Tea (Trà xanh)', 
+    description: 'Light, fragrant tea with a smooth, earthy finish. Helps with digestion', 
+    price: 'R 100' 
+  },
+  { image: chrysanthemumTea, 
+    name: 'Chinese Chrysanthemum (Trà hoa cúc)', 
+    description: 'Floral, calming, caffeine-free team with a delicate, slightly sweet aroma. Helps with digestion.', 
+    price: 'R 100' 
+  },
+  { image: rooibosTea, 
+    name: 'Rooibos Tea', 
+    description: 'Naturally sweet, caffeine-free herbal tea with a smooth, earthy flavour.', 
+    price: 'R 70' 
+  },
 ];
 
 export const COOLDRINKS = [
-  { name: 'Coca Cola', price: 'R 22' },
-  { name: 'Coca Cola Zero', price: 'R 22' },
-  { name: 'Sprite', price: 'R 22' },
-  { name: 'Fanta Orange', price: 'R 22' },
-  { name: 'Stoney Ginger Beer', price: 'R 22' },
-  { name: 'Appletiser', price: 'R 28' },
-  { name: 'Grapetiser', price: 'R 28' },
-  { name: 'Still Water', price: 'R 18' },
-  { name: 'Sparkling Water', price: 'R 20' },
-  { name: 'Iced Tea', price: 'R 25' },
+  { name: 'Still/Sparkling Water', price: 'R 20' },
+  { name: 'Coke', price: 'R 25' },
+  { name: 'Sprite', price: 'R 25' },
+  { name: 'Fanta', price: 'R 25' },
+  { name: 'Lipton Ice Tea', price: 'R 25' },
+  { name: 'Sparletta', price: 'R 25' },
+  { name: 'Liquifruit', price: 'R 25' },
+  { name: 'Cappy Juice', price: 'R 25' },
+  { name: 'Appletiser', price: 'R 35' },
+  { name: 'Grapetiser', price: 'R 35' },
+  { name: 'Coconut water', price: 'R 35' },
+  { name: 'Plum Green tea', price: 'R 35' },
 ];

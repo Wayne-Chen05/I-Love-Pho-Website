@@ -116,6 +116,35 @@
   margin-right: 32px;
 }
 
+.menu-item-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 32px;
+}
+
+.menu-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-option-name {
+  font-size: 14px;
+  color: black;
+}
+
+.menu-option-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+  min-width: 60px;
+  text-align: right;
+}
+
 /* Back button: center bottom, circular, black, white left arrow */
 .menus-back-wrap {
   display: flex;
@@ -158,10 +187,6 @@
     margin-bottom: 20px;
   }
 
-  .menu-section:first-child .menu-section-divider {
-    margin-top: 0;
-  }
-
   .menu-section-divider-title {
     font-size: 24px;
   }
@@ -197,6 +222,24 @@
 
   .menu-item-price {
     font-size: 16px;
+  }
+
+  .menu-item-options {
+    margin-right: 20px;
+    gap: 5px;
+  }
+
+  .menu-option {
+    gap: 10px;
+  }
+
+  .menu-option-name {
+    font-size: 13px;
+  }
+
+  .menu-option-price {
+    font-size: 14px;
+    min-width: 50px;
   }
 
   .menus-back-wrap {

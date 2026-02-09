@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { STARTERS, MAINS, DESSERTS, SECTION_BACKGROUNDS } from './cuisineMenuData';
 import './Menus.css';
 
-const MenuItem = ({ image, name, description, price }) => (
+const MenuItem = ({ image, name, description, price, options }) => (
   <div className="menu-item">
     <div className="menu-item-image">
       {image ? (
@@ -14,7 +14,18 @@ const MenuItem = ({ image, name, description, price }) => (
       <h3 className="menu-item-name">{name}</h3>
       <p className="menu-item-description">{description}</p>
     </div>
-    <span className="menu-item-price">{price}</span>
+    {options ? (
+      <div className="menu-item-options">
+        {options.map((option, index) => (
+          <div key={index} className="menu-option">
+            <span className="menu-option-name">{option.name}</span>
+            <span className="menu-option-price">{option.price}</span>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <span className="menu-item-price">{price}</span>
+    )}
   </div>
 );
 
@@ -45,6 +56,7 @@ const Menus = () => {
                 name={item.name}
                 description={item.description}
                 price={item.price}
+                options={item.options}
               />
             ))}
           </div>
@@ -60,6 +72,7 @@ const Menus = () => {
                 name={item.name}
                 description={item.description}
                 price={item.price}
+                options={item.options}
               />
             ))}
           </div>
@@ -75,6 +88,7 @@ const Menus = () => {
                 name={item.name}
                 description={item.description}
                 price={item.price}
+                options={item.options}
               />
             ))}
           </div>
