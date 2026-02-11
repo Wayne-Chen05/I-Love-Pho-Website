@@ -4,16 +4,16 @@ import './Testimonials.css';
 const Testimonials = () => {
   const testimonials = [
     {
-      text: "Best vietnamese food i've ever had! Ordered the beef pho and prawn dim sum. The flavours just melded together perfectly!",
+      text: "Best vietnamese food I've ever had! Ordered the beef pho and prawn dim sum. The flavours just melded together perfectly!",
       author: "Ilhaam"
     },
     {
-      text: "The ambience was great and the food even better! Simple recipes done well, with top-notch ingredients. Will be back!",
-      author: "Dani"
+      text: "Truly a pleasant experience and wonderfully tasty food. I had the beef pho and when I asked for extra beef, they sure listened!",
+      author: "Shani"
     },
     {
-      text: "Eating here made me miss Vietnam so much. What a treat! I will be bringing all my friends here.!",
-      author: "Carly"
+      text: "My wife and I went straight in for lunch on the day the Vietnamese restaurant opened. The servers were incredibly friendly, but most importantly, the food was excellent.",
+      author: "Daniel"
     }
   ];
 
