@@ -26,39 +26,39 @@
 // import main1 from '../../assets/main1.jpg';
 // import startersBg from '../../assets/starters-bg.jpg';
 
-import startersDivider from '../../assets/CuisineMenu/Starters/starters divider.jpg';
+import startersDivider from '../../assets/CuisineMenu/Starters/starters divider.webp';
 
-import dumplings from '../../assets/CuisineMenu/Starters/Dumplings.jpg';
-import kfc from '../../assets/CuisineMenu/Starters/Korean Fried Chicken Wings.jpg';
-import freshSpringRolls from '../../assets/CuisineMenu/Starters/Prawn Fresh Spring Roll.jpg';
-import banhMi from '../../assets/CuisineMenu/Starters/Banh Mi.jpg';
-import chineseShrimpChips from '../../assets/CuisineMenu/Starters/Chinese Shrimp Chips.jpg';
-import crispyWontons from '../../assets/CuisineMenu/Starters/Crispy Wontons.jpg';
-import friedSpringRolls from '../../assets/CuisineMenu/Starters/Fried Spring Roll.jpg';
-import meatballs from '../../assets/CuisineMenu/Starters/Meatballs.jpg';
-import prawnDimSum from '../../assets/CuisineMenu/Starters/Prawn Dim Sum.jpg';
-import prawnTempura from '../../assets/CuisineMenu/Starters/Prawn Tempura.jpg';
+import dumplings from '../../assets/CuisineMenu/Starters/Dumplings.webp';
+import kfc from '../../assets/CuisineMenu/Starters/Korean Fried Chicken Wings.webp';
+import freshSpringRolls from '../../assets/CuisineMenu/Starters/Prawn Fresh Spring Roll.webp';
+import banhMi from '../../assets/CuisineMenu/Starters/Banh Mi.webp';
+import chineseShrimpChips from '../../assets/CuisineMenu/Starters/Chinese Shrimp Chips.webp';
+import crispyWontons from '../../assets/CuisineMenu/Starters/Crispy Wontons.webp';
+import friedSpringRolls from '../../assets/CuisineMenu/Starters/Fried Spring Roll.webp';
+import meatballs from '../../assets/CuisineMenu/Starters/Meatballs.webp';
+import prawnDimSum from '../../assets/CuisineMenu/Starters/Prawn Dim Sum.webp';
+import prawnTempura from '../../assets/CuisineMenu/Starters/Prawn Tempura.webp';
 
-import mainsDivider from '../../assets/CuisineMenu/Mains/mains divider.jpg';
+import mainsDivider from '../../assets/CuisineMenu/Mains/mains divider.webp';
 
-import beefPho from '../../assets/CuisineMenu/Mains/Beef Noodle Soup.jpg';
-import chickenPho from '../../assets/CuisineMenu/Mains/Chicken Noodle Soup.jpg';
-import friedNoodles from '../../assets/CuisineMenu/Mains/Fried Noodles.jpg';
-import friedRice from '../../assets/CuisineMenu/Mains/Fried Rice.jpg';
-import beefVerm from '../../assets/CuisineMenu/Mains/Grilled Beef Ball Vermicelli Bowl.jpg';
-import chickenVerm from '../../assets/CuisineMenu/Mains/Grilled Chicken Vermicelli Bowl.jpg';
-import vegVerm from '../../assets/CuisineMenu/Mains/Vegetarian Vermicelli Bowl.png';
-import soupCombo from '../../assets/CuisineMenu/Mains/Soup Combo.png';
-import springRollBowl from '../../assets/CuisineMenu/Mains/Spring Roll Bowl.jpg';
-import stirFry from '../../assets/CuisineMenu/Mains/Stir Fry.png';
-import sweetAndSour from '../../assets/CuisineMenu/Mains/Sweet and Sour Chicken.jpg';
-import pepperSteak from '../../assets/CuisineMenu/Mains/Taiwanese Black Pepper Steak Noodles.jpeg';
+import beefPho from '../../assets/CuisineMenu/Mains/Beef Noodle Soup.webp';
+import chickenPho from '../../assets/CuisineMenu/Mains/Chicken Noodle Soup.webp';
+import friedNoodles from '../../assets/CuisineMenu/Mains/Fried Noodles.webp';
+import friedRice from '../../assets/CuisineMenu/Mains/Fried Rice.webp';
+import beefVerm from '../../assets/CuisineMenu/Mains/Grilled Beef Ball Vermicelli Bowl.webp';
+import chickenVerm from '../../assets/CuisineMenu/Mains/Grilled Chicken Vermicelli Bowl.webp';
+import vegVerm from '../../assets/CuisineMenu/Mains/Vegetarian Vermicelli Bowl.webp';
+import soupCombo from '../../assets/CuisineMenu/Mains/Soup Combo.webp';
+import springRollBowl from '../../assets/CuisineMenu/Mains/Spring Roll Bowl.webp';
+import stirFry from '../../assets/CuisineMenu/Mains/Stir Fry.webp';
+import sweetAndSour from '../../assets/CuisineMenu/Mains/Sweet and Sour Chicken.webp';
+import pepperSteak from '../../assets/CuisineMenu/Mains/Taiwanese Black Pepper Steak Noodles.webp';
 
-import dessertsDivider from '../../assets/CuisineMenu/Desserts/desserts divider.jpg'
+import dessertsDivider from '../../assets/CuisineMenu/Desserts/desserts divider.webp'
 
-import avoIce from '../../assets/CuisineMenu/Desserts/Avo Ice Cream.png';
-import redBean from '../../assets/CuisineMenu/Desserts/Red Bean.jpg';
-import bananaIce from '../../assets/CuisineMenu/Desserts/Banana Ice Cream.jpg';
+import avoIce from '../../assets/CuisineMenu/Desserts/Avo Ice Cream.webp';
+import redBean from '../../assets/CuisineMenu/Desserts/Red Bean.webp';
+import bananaIce from '../../assets/CuisineMenu/Desserts/Banana Ice Cream.webp';
 
 export const SECTION_BACKGROUNDS = {
   starters: startersDivider,

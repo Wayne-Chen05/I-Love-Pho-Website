@@ -1,7 +1,7 @@
 import React from "react";
 import './AboutUs.css';
-import springRolls from "../../assets/Prawn Fresh Spring Roll.jpg"
-import dumplings from "../../assets/Dumplings.jpg"
+import springRolls from "../../assets/Prawn Fresh Spring Roll.webp"
+import dumplings from "../../assets/Dumplings.webp"
 
 const AboutUs = () => {
   return (

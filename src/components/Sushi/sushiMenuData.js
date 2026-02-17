@@ -16,25 +16,25 @@
 // import platter1 from '../../assets/platter-1.jpg';
 // import sushiBg from '../../assets/sushi-bg.jpg';
 
-import platter2 from '../../assets/SushiMenu/Lunch Specials/platter 2.jpeg';
-import platter3 from '../../assets/SushiMenu/Lunch Specials/platter 3.jpeg';
-import platter4 from '../../assets/SushiMenu/Lunch Specials/platter 4.jpeg';
+import platter2 from '../../assets/SushiMenu/Lunch Specials/platter 2.webp';
+import platter3 from '../../assets/SushiMenu/Lunch Specials/platter 3.webp';
+import platter4 from '../../assets/SushiMenu/Lunch Specials/platter 4.webp';
 
-import chefsPlatter from "../../assets/SushiMenu/Platters/chef's platter.jpeg";
-import deepFriedPlatter from '../../assets/SushiMenu/Platters/deep fried platter.jpeg';
-import salmonLunch from '../../assets/SushiMenu/Platters/salmon lunch.jpeg';
-import tempuraPlatter from '../../assets/SushiMenu/Platters/tempura platter.jpeg';
+import chefsPlatter from "../../assets/SushiMenu/Platters/chef's platter.webp";
+import deepFriedPlatter from '../../assets/SushiMenu/Platters/deep fried platter.webp';
+import salmonLunch from '../../assets/SushiMenu/Platters/salmon lunch.webp';
+import tempuraPlatter from '../../assets/SushiMenu/Platters/tempura platter.webp';
 
-import platter1 from '../../assets/SushiMenu/Lunch Specials/platter 1.jpg';
+import platter1 from '../../assets/SushiMenu/Lunch Specials/platter 1.webp';
 
-import sixFlavours from '../../assets/SushiMenu/Platters/6 flavours nigiri.jpeg';
-import prawnPlatter from '../../assets/SushiMenu/Platters/prawn platter.jpg';
-import rainbowPlatter from '../../assets/SushiMenu/Platters/rainbow platter.jpg';
-import vegPlatter from '../../assets/SushiMenu/Platters/veg platter.jpg';
+import sixFlavours from '../../assets/SushiMenu/Platters/6 flavours nigiri.webp';
+import prawnPlatter from '../../assets/SushiMenu/Platters/prawn platter.webp';
+import rainbowPlatter from '../../assets/SushiMenu/Platters/rainbow platter.webp';
+import vegPlatter from '../../assets/SushiMenu/Platters/veg platter.webp';
 
-import sushiDivider from '../../assets/SushiMenu/sushi divider.jpg';
-import lunchSpecialsDivider from '../../assets/SushiMenu/lunch specials divider.jpg';
-import sushiPlattersDivider from '../../assets/SushiMenu/sushi platters divider.jpg';
+import sushiDivider from '../../assets/SushiMenu/sushi divider.webp';
+import lunchSpecialsDivider from '../../assets/SushiMenu/lunch specials divider.webp';
+import sushiPlattersDivider from '../../assets/SushiMenu/sushi platters divider.webp';
 
 export const SECTION_BACKGROUNDS = {
   sushi: sushiDivider,

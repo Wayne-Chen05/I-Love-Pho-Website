@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import './FlavorsOfVietnam.css';
-import cuisine from "../../assets/Spring Roll Bowl.jpg";
-import sushi from "../../assets/tempura platter.jpeg";
-import drinks from "../../assets/vietnamese egg coffee.jpeg";
+import cuisine from "../../assets/Spring Roll Bowl.webp";
+import sushi from "../../assets/tempura platter.webp";
+import drinks from "../../assets/vietnamese egg coffee.webp";
 
 const FlavorsOfVietnam = () => {
   const navigate = useNavigate();

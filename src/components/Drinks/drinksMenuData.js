@@ -16,19 +16,19 @@
 // import tea1 from '../../assets/tea-1.jpg';
 // import coffeeBg from '../../assets/coffee-bg.jpg';
 
-import coffeeDivider from '../../assets/DrinksMenu/Coffee/coffee divider.jpg';
+import coffeeDivider from '../../assets/DrinksMenu/Coffee/coffee divider.webp';
 
-import hotCoffee from '../../assets/DrinksMenu/Coffee/hot coffee.jpg';
-import iceCoffee from '../../assets/DrinksMenu/Coffee/ice coffee.jpg';
-import eggCoffee from '../../assets/DrinksMenu/Coffee/egg coffee.jpeg';
+import hotCoffee from '../../assets/DrinksMenu/Coffee/hot coffee.webp';
+import iceCoffee from '../../assets/DrinksMenu/Coffee/ice coffee.webp';
+import eggCoffee from '../../assets/DrinksMenu/Coffee/egg coffee.webp';
 
-import teaDivider from '../../assets/DrinksMenu/Tea/tea divider.jpg';
+import teaDivider from '../../assets/DrinksMenu/Tea/tea divider.webp';
 
-import jasmineTea from '../../assets/DrinksMenu/Tea/jasmine tea.jpg';
-import chrysanthemumTea from '../../assets/DrinksMenu/Tea/chysanthemum tea.jpg';
-import rooibosTea from '../../assets/DrinksMenu/Tea/rooibos tea.jpg';
+import jasmineTea from '../../assets/DrinksMenu/Tea/jasmine tea.webp';
+import chrysanthemumTea from '../../assets/DrinksMenu/Tea/chysanthemum tea.webp';
+import rooibosTea from '../../assets/DrinksMenu/Tea/rooibos tea.webp';
 
-import drinksDivider from '../../assets/DrinksMenu/drinks divider.jpg'
+import drinksDivider from '../../assets/DrinksMenu/drinks divider.webp'
 
 export const SECTION_BACKGROUNDS = {
   coffee: coffeeDivider,

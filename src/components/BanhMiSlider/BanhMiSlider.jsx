@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import './BanhMiSlider.css';
-import koreanChicken from "../../assets/Korean Fried Chicken Wings.jpg"
-import combo from "../../assets/Combo.jpg"
-import springRollBowl from "../../assets/Spring Roll Bowl.jpg"
-import searedCheeseSushi from "../../assets/Seared Cheese Sushi.jpg"
+import koreanChicken from "../../assets/Korean Fried Chicken Wings.webp"
+import combo from "../../assets/Combo.webp"
+import springRollBowl from "../../assets/Spring Roll Bowl.webp"
+import searedCheeseSushi from "../../assets/Seared Cheese Sushi.webp"
 
 const BanhMiSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,6 +1,6 @@
 import React from "react";
 import './ContactSection.css';
-import footerImg from "../../assets/footer.jpg"
+import footerImg from "../../assets/footer_1.webp";
 
 const ContactSection = () => {
   return (
