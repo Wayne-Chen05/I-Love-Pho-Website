@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { STARTERS, MAINS, DESSERTS, SECTION_BACKGROUNDS } from './cuisineMenuData';
 import './Menus.css';
@@ -7,7 +7,7 @@ const MenuItem = ({ image, name, description, price, options }) => (
   <div className="menu-item">
     <div className="menu-item-image">
       {image ? (
-        <img src={image} alt={name} className="menu-item-img" />
+        <img src={image} alt={name} className="menu-item-img" loading="lazy" decoding="async" />
       ) : null}
     </div>
     <div className="menu-item-content">
@@ -29,14 +29,40 @@ const MenuItem = ({ image, name, description, price, options }) => (
   </div>
 );
 
-const SectionDivider = ({ title, backgroundImage }) => (
-  <div
-    className="menu-section-divider"
-    style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}
-  >
-    <h2 className="menu-section-divider-title">{title}</h2>
-  </div>
-);
+const SectionDivider = ({ title, backgroundImage }) => {
+  const ref = useRef(null);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!backgroundImage) return;
+    const el = ref.current;
+    if (!el) return;
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setLoaded(true);
+            io.disconnect();
+          }
+        });
+      });
+      io.observe(el);
+      return () => io.disconnect();
+    } else {
+      setLoaded(true);
+    }
+  }, [backgroundImage]);
+
+  return (
+    <div
+      ref={ref}
+      className="menu-section-divider"
+      style={loaded && backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}
+    >
+      <h2 className="menu-section-divider-title">{title}</h2>
+    </div>
+  );
+};
 
 const Menus = () => {
   useEffect(() => {

@@ -67,7 +67,7 @@ const BanhMiSlider = () => {
         >
           {slides.map((slide, index) => (
             <div key={index} className="slide">
-              <img src={slide.image} alt={slide.title} />
+              <img src={slide.image} alt={slide.title} loading="lazy" decoding="async" />
             </div>
           ))}
         </div>

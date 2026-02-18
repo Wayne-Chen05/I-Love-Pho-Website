@@ -9,17 +9,21 @@ const AboutUs = () => {
       <div className="about-container">
         <div className="about-images">
           <div className="image-wrapper">
-            <img 
+            <img
               src={springRolls}
               alt="Fresh spring rolls"
               className="about-image"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="image-wrapper">
-            <img 
+            <img
               src={dumplings}
               alt="Dumplings"
               className="about-image"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

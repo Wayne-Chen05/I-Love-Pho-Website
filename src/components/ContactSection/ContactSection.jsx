@@ -7,10 +7,12 @@ const ContactSection = () => {
     <section id="contact" className="contact-section">
       <div className="contact-wrapper">
         <div className="contact-image">
-          <img 
+          <img
             src={footerImg}
             alt="Fresh Vietnamese ingredients"
             className="ingredients-image"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div className="contact-container">

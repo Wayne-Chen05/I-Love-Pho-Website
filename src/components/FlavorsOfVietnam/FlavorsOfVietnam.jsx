@@ -42,7 +42,7 @@ const FlavorsOfVietnam = () => {
             style={{ cursor: 'pointer' }}
           >
             <div className="flavor-image-wrapper">
-              <img src={category.image} alt={category.title} className="flavor-image" />
+              <img src={category.image} alt={category.title} className="flavor-image" loading="lazy" decoding="async" />
             </div>
             <h3 className="flavor-title">{category.title}</h3>
           </div>
